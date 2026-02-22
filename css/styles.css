@@ -4,6 +4,16 @@
     box-sizing: border-box;
 }
 
+@font-face {
+    font-family: "Telma";
+    src: url(../assets/font/Telma-Variable.ttf);
+}
+
+@font-face {
+    font-family: "Bounder";
+    src: url(../assets/font/BounderDemoMedium-G3dmg\ \(1\).ttf);
+}
+
 .Primary-btn {
     background-color: #ff3700;
     text-decoration: none;
@@ -241,15 +251,24 @@ header {
         text-shadow: 2px 2px 2px 2px rgb(31, 18, 2);
     }
 
+    h1 span {
+        font-family: "Telma";
+    }
+
     p {
-        margin-top: 10px;
         font-weight: 550;
         font-size: clamp(7px, 3rem, 14px);
     }
 
     h1 {
         color: #000d1c;
-        font-size: clamp(29px, 5vw, 40px);
+        font-size: clamp(29px, 5vw, 60px);
+        font-family: "Bounder";
+        line-height: 4.4rem;
+    }
+
+    h6 {
+        font-size: clamp(9px, 5vw, 13px);
     }
 
     .img-section img {
