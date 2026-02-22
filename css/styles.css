@@ -218,6 +218,7 @@ header {
 }
 
 .HERO-SECTION {
+    overflow-x: hidden;
     height: 100%;
     width: 100%;
     background-image: linear-gradient(to left, #00b7ff -30%, #ffffff 50%, #fa8361 100%);
