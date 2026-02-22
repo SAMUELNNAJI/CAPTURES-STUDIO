@@ -264,7 +264,6 @@ header {
         color: #000d1c;
         font-size: clamp(29px, 5vw, 60px);
         font-family: "Bounder";
-        line-height: 4.4rem;
     }
 
     h6 {
@@ -286,6 +285,10 @@ header {
 
         .btnsection {
             margin-top: 4%;
+        }
+
+        h1 {
+            line-height: 4.4rem;
         }
 
         .img-section img {
