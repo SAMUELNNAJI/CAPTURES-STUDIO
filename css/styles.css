@@ -23,6 +23,7 @@
     box-shadow: 2px 2px 15px #fa8361,
         -2px -2px 15px #b6dae8;
     font-weight: 600;
+    font-size: clamp(14px, 4vw, 18px);
 }
 
 .btn {
@@ -222,7 +223,6 @@ header {
     background-image: linear-gradient(to left, #00b7ff -30%, #ffffff 50%, #fa8361 100%);
     position: absolute;
     top: 0;
-    z-index: -1;
 
     .Hero-content {
         width: 100%;
@@ -235,7 +235,7 @@ header {
         position: absolute;
         transform: translate(-50%, -50%);
         left: 50%;
-        top: 56%;
+        top: 60%;
     }
 
     .Text-section {
@@ -244,6 +244,9 @@ header {
 
     .btnsection {
         margin-top: 9%;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
     }
 
     span {
@@ -262,7 +265,7 @@ header {
 
     h1 {
         color: #000d1c;
-        font-size: clamp(40px, 5vw, 60px);
+        font-size: clamp(33px, 5vw, 60px);
         font-family: "Bounder";
     }
 
