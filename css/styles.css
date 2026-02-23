@@ -581,6 +581,16 @@ svg {
             max-width: 600px;
             padding: 10px;
         }
+
+        .timeline {
+            position: relative;
+            left: 3%;
+        }
+
+        h2 {
+            position: relative;
+            left: 8%;
+        }
     }
 
 }
