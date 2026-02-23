@@ -286,7 +286,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
+    min-height: 100%;
     padding: 20px;
 }
 
@@ -305,7 +305,7 @@ svg {
 }
 
 .imgs img {
-    min-width: 120px;
+    min-width: 165px;
     height: 8rem;
     aspect-ratio: 2/4;
 }
@@ -570,7 +570,7 @@ svg {
     }
 
     .Photograps .container {
-        max-width: 80%;
+        max-width: 100%;
     }
 
     .Services {
