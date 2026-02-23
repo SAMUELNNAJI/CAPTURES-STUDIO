@@ -41,8 +41,10 @@
 }
 
 body {
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-image: linear-gradient(to left, #00b7ff -30%, #ffffff 50%, #fa8361 100%);
+    background-attachment: fixed;
 }
 
 /* HEADER SECTION */
@@ -52,6 +54,7 @@ header {
     position: sticky;
     top: 0;
     z-index: 100;
+    background: transparent;
 
     h1 {
         font-size: 1.5rem;
@@ -219,24 +222,22 @@ header {
 
 .HERO-SECTION {
     overflow-x: hidden;
-    height: 100%;
+    min-height: 100vh;
     width: 100%;
-    background-image: linear-gradient(to left, #00b7ff -30%, #ffffff 50%, #fa8361 100%);
-    position: absolute;
-    top: 0;
+
 
     .Hero-content {
         width: 100%;
         display: flex;
         flex-wrap: wrap;
-        gap: 10px;
-        padding-inline: 30px;
+        gap: 20px;
+        padding: 40px 30px;
         justify-content: center;
-        align-items: flex-start;
+        align-items: center;
         position: absolute;
-        transform: translate(-50%, -50%);
         left: 50%;
-        top: 60%;
+        top: 65%;
+        transform: translate(-50%, -50%);
     }
 
     .Text-section {
@@ -279,6 +280,9 @@ header {
     }
 }
 
+.Photograps {
+    background-color: blueviolet;
+}
 
 @media (min-width: 1200px) {
     .HERO-SECTION {
@@ -319,19 +323,31 @@ header {
     /* timeline: type (3.5s) -> pause (4s) -> delete (3.5s) = 11s total
        use steps for discrete character appearance; keyframes include hold */
     animation:
-        typing 11s steps(15,end) infinite,
+        typing 11s steps(15, end) infinite,
         blink-cursor 0.7s step-end infinite;
 }
 
 /* Text actually being typed */
 @keyframes typing {
+
     /* 0% -> 31.818% : typing (3.5s)
        31.818% -> 68.182% : pause (4s)
        68.182% -> 100% : deleting (3.5s) back to 0 */
-    0% { width: 0ch; }
-    31.818% { width: 15ch; }
-    68.182% { width: 15ch; }
-    100% { width: 0ch; }
+    0% {
+        width: 0ch;
+    }
+
+    31.818% {
+        width: 15ch;
+    }
+
+    68.182% {
+        width: 15ch;
+    }
+
+    100% {
+        width: 0ch;
+    }
 }
 
 /* Blinking cursor */
