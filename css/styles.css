@@ -298,8 +298,9 @@ header {
 }
 
 .imgs img {
-    width: 100%;
-    height: 20rem;
+    min-width: 48%;
+    height: 9rem;
+    aspect-ratio: 2/4;
 }
 
 .Photograps .container {
@@ -379,8 +380,8 @@ header {
     }
 
     .imgs img {
-        width: 25%;
-        height: 15rem;
+        width: 20%;
+        height: 12rem;
     }
 
     .Photograps .container {
