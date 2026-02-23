@@ -396,9 +396,11 @@ svg {
 
     .timeline {
         display: flex;
-        flex-wrap: wrap;
-        gap: 100px;
+        padding: 30px;
+        /* flex-wrap: wrap; */
+        gap: 70px;
         justify-content: center;
+        align-items: center;
     }
 
     .left-timeline {
@@ -427,6 +429,21 @@ svg {
         width: 10px;
         height: 10px;
         background-color: #00b7ff;
+        border-radius: 50%;
+        position: absolute;
+        left: -13px;
+        top: 0;
+    }
+
+    .right {
+        position: relative;
+    }
+
+    .right::after {
+        content: "";
+        width: 10px;
+        height: 10px;
+        background-color: #ff3c00;
         border-radius: 50%;
         position: absolute;
         left: -13px;
@@ -463,6 +480,37 @@ svg {
         top: 0;
     }
 
+
+    .two2 {
+        position: relative;
+    }
+
+    .two2::after {
+        content: "";
+        width: 15px;
+        height: 15px;
+        background-color: #ff3c00;
+        border-radius: 50%;
+        position: absolute;
+        left: -16px;
+        top: 0;
+    }
+
+    .three3 {
+        position: relative;
+    }
+
+    .three3::after {
+        content: "";
+        width: 20px;
+        height: 20px;
+        background-color: #ff3c00;
+        border-radius: 50%;
+        position: absolute;
+        left: -20px;
+        top: 0;
+    }
+
     .left::before {
         content: "";
         position: absolute;
@@ -473,6 +521,8 @@ svg {
         width: 0.2rem;
         background-color: #00b7ff;
     }
+
+
 
 
     .right {
@@ -487,7 +537,7 @@ svg {
         border-radius: 50%;
         height: 98%;
         width: 0.2rem;
-        background-color: #000d1c;
+        background-color: #ff3c00;
     }
 }
 
