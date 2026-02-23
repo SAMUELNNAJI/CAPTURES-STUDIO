@@ -223,7 +223,7 @@ header {
 
 .HERO-SECTION {
     overflow-x: hidden;
-    min-height: 100vh;
+    height: 100dvh;
     width: 100%;
 
 
@@ -312,7 +312,9 @@ svg {
 
 .Photograps .container {
     width: 100%;
-    background: linear-gradient(to bottom, #00b7ff, #601905);
+    /* background: linear-gradient(to bottom, #00b7ff, #601905); */
+    background: linear-gradient(to bottom, #c5e1ed, #7396a5);
+    background-color: #9de2ff;
     box-shadow: 27px 27px 55px #bebebe,
         -27px -27px 55px #ffffff;
     padding: 30px 10px;
@@ -365,6 +367,134 @@ svg {
     color: #250800;
 }
 
+.Services {
+    h2 {
+        font-family: "Telma";
+        font-size: clamp(20px, 8vw, 40px);
+        color: #ff3700;
+        text-shadow: #250800 2px 2px 0px 20px;
+        position: relative;
+        left: 11%;
+    }
+
+    p {
+        position: relative;
+        left: 10%;
+        max-width: 400px;
+        padding: 10px;
+    }
+
+    h3 {
+        font-size: clamp(10px, 3vw, 15px);
+    }
+
+
+    li {
+        font-size: clamp(12px, 4vw, 10px);
+        list-style: none;
+    }
+
+    .timeline {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 100px;
+        justify-content: center;
+    }
+
+    .left-timeline {
+        display: flex;
+        gap: 40px;
+        flex-wrap: wrap;
+    }
+
+    .right-timeline {
+        display: flex;
+        gap: 40px;
+        flex-wrap: wrap;
+    }
+
+    .Maternity,
+    .brithday {
+        margin-bottom: 20px;
+    }
+
+    .left {
+        position: relative;
+    }
+
+    .left::after {
+        content: "";
+        width: 10px;
+        height: 10px;
+        background-color: #00b7ff;
+        border-radius: 50%;
+        position: absolute;
+        left: -13px;
+        top: 0;
+    }
+
+    .two {
+        position: relative;
+    }
+
+    .two::after {
+        content: "";
+        width: 15px;
+        height: 15px;
+        background-color: #00b7ff;
+        border-radius: 50%;
+        position: absolute;
+        left: -16px;
+        top: 0;
+    }
+
+    .three {
+        position: relative;
+    }
+
+    .three::after {
+        content: "";
+        width: 20px;
+        height: 20px;
+        background-color: #00b7ff;
+        border-radius: 50%;
+        position: absolute;
+        left: -20px;
+        top: 0;
+    }
+
+    .left::before {
+        content: "";
+        position: absolute;
+        left: -10px;
+        top: 0;
+        border-radius: 50%;
+        height: 98%;
+        width: 0.2rem;
+        background-color: #00b7ff;
+    }
+
+
+    .right {
+        position: relative;
+    }
+
+    .right::before {
+        content: "";
+        position: absolute;
+        left: -10px;
+        top: 0;
+        border-radius: 50%;
+        height: 98%;
+        width: 0.2rem;
+        background-color: #000d1c;
+    }
+}
+
+
+
+
+
 @media (min-width: 1200px) {
     .HERO-SECTION {
         .Hero-content {
@@ -403,28 +533,21 @@ svg {
 /* === Typing Effect === */
 .typing {
     display: inline-block;
-    width: 0;
     /* start closed so typing animation reveals it */
     overflow: hidden;
     white-space: nowrap;
     border-right: 3px solid #fff;
-
     font-family: 'Courier New', Courier, monospace;
     color: #e0f7ff;
 
-    /* timeline: type (3.5s) -> pause (4s) -> delete (3.5s) = 11s total
-       use steps for discrete character appearance; keyframes include hold */
     animation:
-        typing 11s steps(15, end) infinite,
+        typing 11s steps(12, end) infinite,
         blink-cursor 0.7s step-end infinite;
 }
 
 /* Text actually being typed */
 @keyframes typing {
 
-    /* 0% -> 31.818% : typing (3.5s)
-       31.818% -> 68.182% : pause (4s)
-       68.182% -> 100% : deleting (3.5s) back to 0 */
     0% {
         width: 0ch;
     }
