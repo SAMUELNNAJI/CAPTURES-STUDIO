@@ -302,3 +302,47 @@ header {
         }
     }
 }
+
+
+/* === Typing Effect === */
+.typing {
+    display: inline-block;
+    width: 0;
+    /* start closed so typing animation reveals it */
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 3px solid #fff;
+
+    font-family: 'Courier New', Courier, monospace;
+    color: #e0f7ff;
+
+    /* timeline: type (3.5s) -> pause (4s) -> delete (3.5s) = 11s total
+       use steps for discrete character appearance; keyframes include hold */
+    animation:
+        typing 11s steps(15,end) infinite,
+        blink-cursor 0.7s step-end infinite;
+}
+
+/* Text actually being typed */
+@keyframes typing {
+    /* 0% -> 31.818% : typing (3.5s)
+       31.818% -> 68.182% : pause (4s)
+       68.182% -> 100% : deleting (3.5s) back to 0 */
+    0% { width: 0ch; }
+    31.818% { width: 15ch; }
+    68.182% { width: 15ch; }
+    100% { width: 0ch; }
+}
+
+/* Blinking cursor */
+@keyframes blink-cursor {
+
+    from,
+    to {
+        border-color: transparent
+    }
+
+    50% {
+        border-color: #fff
+    }
+}
