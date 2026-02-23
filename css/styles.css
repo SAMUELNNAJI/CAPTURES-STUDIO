@@ -373,24 +373,21 @@ svg {
         font-size: clamp(20px, 8vw, 40px);
         color: #ff3700;
         text-shadow: #250800 2px 2px 0px 20px;
-        position: relative;
-        left: 11%;
+        padding-left: 30px;
     }
 
     p {
-        position: relative;
-        left: 10%;
+        padding: 10px 30px;
         max-width: 400px;
-        padding: 10px;
     }
 
     h3 {
-        font-size: clamp(10px, 3vw, 15px);
+        font-size: clamp(13px, 3vw, 17px);
     }
 
 
     li {
-        font-size: clamp(12px, 4vw, 10px);
+        font-size: clamp(13px, 4vw, 10px);
         list-style: none;
     }
 
@@ -575,6 +572,15 @@ svg {
 
     .Photograps .container {
         max-width: 80%;
+    }
+
+    .Services {
+        p {
+            position: relative;
+            left: 10%;
+            max-width: 600px;
+            padding: 10px;
+        }
     }
 
 }
