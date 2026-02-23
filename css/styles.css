@@ -305,8 +305,8 @@ svg {
 }
 
 .imgs img {
-    min-width: 180px;
-    height: 12rem;
+    min-width: 120px;
+    height: 8rem;
     aspect-ratio: 2/4;
 }
 
@@ -379,7 +379,6 @@ svg {
 
     p {
         padding: 10px 30px;
-        max-width: 400px;
         font-weight: 550;
         font-size: clamp(10px, 5vw, 14px);
     }
@@ -393,7 +392,7 @@ svg {
     li {
         font-size: clamp(13px, 4vw, 10px);
         list-style: none;
-        max-width: 220px;
+        max-width: 200px;
     }
 
 
@@ -408,7 +407,7 @@ svg {
 
     .left-timeline {
         display: flex;
-        gap: 40px;
+        gap: 70px;
         flex-wrap: wrap;
     }
 
@@ -545,7 +544,54 @@ svg {
 }
 
 
+@media (max-width: 1104px) {
+    .HERO-SECTION {
+        .Hero-content {
+            top: 60%;
+            left: 50%;
+        }
 
+        .btnsection {
+            margin-top: 4%;
+        }
+
+        h1 {
+            line-height: 4.4rem;
+        }
+
+        .img-section img {
+            width: 45rem;
+        }
+    }
+
+    .imgs img {
+        height: 12rem;
+        aspect-ratio: 1/9;
+    }
+
+    .Photograps .container {
+        max-width: 80%;
+    }
+
+    .Services {
+        p {
+            position: relative;
+            left: 10%;
+            max-width: 600px;
+            padding: 10px;
+        }
+
+        /* .timeline {
+            position: relative;
+            left: 3%;
+        } */
+
+        h2 {
+            position: relative;
+            left: 8%;
+        }
+    }
+}
 
 
 @media (min-width: 1200px) {
@@ -588,10 +634,10 @@ svg {
             padding: 10px;
         }
 
-        .timeline {
+        /* .timeline {
             position: relative;
             left: 3%;
-        }
+        } */
 
         h2 {
             position: relative;
