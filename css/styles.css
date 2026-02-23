@@ -298,7 +298,7 @@ header {
 }
 
 .imgs img {
-    min-width: 48%;
+    min-width: 43%;
     height: 9rem;
     aspect-ratio: 2/4;
 }
