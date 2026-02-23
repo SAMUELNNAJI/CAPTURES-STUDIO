@@ -150,7 +150,7 @@ header {
 }
 
 /* MOBILE MENU STYLES */
-@media (max-width: 768px) {
+@media (max-width: 1023px) {
     .hamburger {
         display: flex;
     }
@@ -268,7 +268,7 @@ header {
 
     h1 {
         color: #000d1c;
-        font-size: clamp(33px, 5vw, 60px);
+        font-size: clamp(33px, 9vw, 60px);
         font-family: "Bounder";
     }
 
@@ -368,6 +368,7 @@ svg {
 }
 
 .Services {
+
     h2 {
         font-family: "Telma";
         font-size: clamp(20px, 8vw, 40px);
@@ -403,6 +404,7 @@ svg {
         gap: 70px;
         justify-content: center;
         align-items: center;
+        width: 100%;
     }
 
     .left-timeline {
@@ -544,7 +546,7 @@ svg {
 }
 
 
-@media (max-width: 1104px) {
+@media (min-width:768px) and (max-width: 1104px) {
     .HERO-SECTION {
         .Hero-content {
             top: 60%;
@@ -555,12 +557,13 @@ svg {
             margin-top: 4%;
         }
 
-        h1 {
-            line-height: 4.4rem;
+
+        .Text-section {
+            max-width: 670px;
         }
 
         .img-section img {
-            width: 45rem;
+            width: 55rem;
         }
     }
 
@@ -570,10 +573,12 @@ svg {
     }
 
     .Photograps .container {
-        max-width: 100%;
+        max-width: 94%;
     }
 
     .Services {
+        width: 100%;
+
         p {
             position: relative;
             left: 10%;
@@ -581,14 +586,29 @@ svg {
             padding: 10px;
         }
 
-        /* .timeline {
-            position: relative;
-            left: 3%;
-        } */
+        .timeline {
+            position: absolute;
+            left: 10%;
+            transform: translateX(-50%, -50%);
+        }
+
 
         h2 {
             position: relative;
             left: 8%;
+        }
+
+        li {
+            font-size: 1.2rem;
+            max-width: 250px;
+        }
+
+        h3 {
+            font-size: 1.3rem;
+        }
+
+        h6 {
+            font-size: 1.2rem;
         }
     }
 }
@@ -655,11 +675,10 @@ svg {
     overflow: hidden;
     white-space: nowrap;
     border-right: 3px solid #fff;
-    font-family: 'Courier New', Courier, monospace;
     color: #e0f7ff;
 
     animation:
-        typing 11s steps(12, end) infinite,
+        typing 11s steps(14) infinite,
         blink-cursor 0.7s step-end infinite;
 }
 
