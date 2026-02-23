@@ -41,10 +41,11 @@
 }
 
 body {
-    /* overflow-x: hidden; */
+    overflow-x: hidden;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     background-image: linear-gradient(to left, #00b7ff -30%, #ffffff 50%, #fa8361 100%);
     background-attachment: fixed;
+    z-index: -1;
 }
 
 /* HEADER SECTION */
