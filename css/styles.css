@@ -305,7 +305,7 @@ svg {
 }
 
 .imgs img {
-    min-width: 165px;
+    min-width: 125px;
     height: 8rem;
     aspect-ratio: 2/4;
 }
@@ -403,7 +403,7 @@ svg {
         /* flex-wrap: wrap; */
         gap: 70px;
         justify-content: center;
-        align-items: center;
+        align-items: last baseline baseline;
         width: 100%;
     }
 
@@ -568,6 +568,7 @@ svg {
     }
 
     .imgs img {
+        width: 177px;
         height: 12rem;
         aspect-ratio: 1/9;
     }
