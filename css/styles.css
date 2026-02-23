@@ -76,8 +76,8 @@ header {
 
         nav a {
             text-decoration: none;
-            font-weight: 600;
-            font-size: 1.1rem;
+            font-weight: 550;
+            font-size: 0.9rem;
             color: rgb(255, 255, 255);
             transition: all 0.3s ease;
             position: relative;
@@ -297,6 +297,12 @@ header {
     gap: 10px;
 }
 
+svg {
+    position: relative;
+    top: 10px;
+    width: 100%;
+}
+
 .imgs img {
     min-width: 43%;
     height: 7.4rem;
@@ -309,7 +315,7 @@ header {
     box-shadow: 27px 27px 55px #bebebe,
         -27px -27px 55px #ffffff;
     padding: 30px;
-    box-shadow: 0 2px 16px rgba(255, 255, 255, .1);
+    box-shadow: 20px 20px 16px rgba(112, 38, 38, 0.1);
     border-radius: 10px;
 }
 
@@ -355,6 +361,7 @@ header {
 .Photograps .content h2 {
     margin-bottom: 10px;
     font-family: "Bounder";
+    color: #250800;
 }
 
 @media (min-width: 1200px) {
@@ -380,8 +387,9 @@ header {
     }
 
     .imgs img {
-        width: 20%;
+        min-width: 20%;
         height: 12rem;
+        aspect-ratio: 1/9;
     }
 
     .Photograps .container {
