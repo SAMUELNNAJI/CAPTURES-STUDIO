@@ -956,6 +956,9 @@ svg {
         }
 
         
+        .mapouter{
+            max-width: 80%;
+        }
     }
 
 }
