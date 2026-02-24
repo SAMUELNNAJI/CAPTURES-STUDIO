@@ -52,3 +52,18 @@ if (tabButtons.length > 0) {
         contentItems[0].classList.add('active');
     }
 }
+
+
+// WHATSAPP CONTACT FORM FUNCTIONALITY
+function sendToWhatsapp(){
+    let number = "+2348157273063"; // Replace with your WhatsApp number
+    let name = document.getElementById("Name").value;
+    let phone = document.getElementById("Number").value;
+    let date = document.getElementById("date").value;
+    let message = document.getElementById("Message").value;
+
+    let whatsappMessage = `Name: ${name}\nPhone: ${phone}\nDate: ${date}\nMessage: ${message}`;
+
+    let whatsappURL = `https://wa.me/${number}?text=${encodeURIComponent(whatsappMessage)}`;
+    window.open(whatsappURL, '_blank');
+}

@@ -583,27 +583,29 @@
                 <div>
                     <span>
                         <label for="Name">Name</label><br>
-                        <input type="text" placeholder="Your Full Name">
+                        <input type="text" id="Name" placeholder="Your Full Name">
                     </span>
                     <span>
                         <label for="Number">Phone Number</label> <br>
-                        <input type="number" placeholder="Phone Number">
+                        <input type="number" id="Number" placeholder="Phone Number">
                     </span>
                 </div>
 
                 <div>
                     <span>
-                        <label for="Number">Booking Date</label> <br>
+                        <label for="date">Booking Date</label> <br>
                         <input type="date" id="date">
                     </span>
                 </div>
 
                 <div>
                     <span>
-                        <label for="Number">Your Message</label> <br>
-                        <textarea name="" id="" placeholder="Your Message"></textarea>
+                        <label for="Message">Your Message</label> <br>
+                        <textarea name="" id="Message" placeholder="Your Message"></textarea>
                     </span>
                 </div>
+
+                <button class="Primary-btn" onclick="sendToWhatsapp()" style="border: none;">Submit Here </button>
 
             </form>
 
