@@ -549,6 +549,119 @@ svg {
 }
 
 
+.Testimonial {
+    h2 {
+        font-family: "Telma";
+        font-size: clamp(20px, 8vw, 40px);
+        color: #ff3700;
+        text-shadow: #250800 2px 2px 0px 20px;
+        padding-left: 30px;
+        padding-top: 20px;
+    }
+
+    p {
+        padding: 10px 30px;
+        font-weight: 550;
+        font-size: clamp(10px, 5vw, 14px);
+    }
+
+
+    .scrolling {
+        display: flex;
+        padding: 30px;
+        overflow-x: auto;
+        scrollbar-width: none;
+        width: 90%;
+        margin-inline: auto;
+    }
+
+
+
+    .group {
+        display: flex;
+        gap: 20px;
+        justify-content: center;
+        align-items: center;
+        animation: scroll 40s linear infinite;
+        padding-right: 1em;
+    }
+
+
+
+    .cards {
+        padding: 15px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #287B9C;
+        min-width: 250px;
+        height: fit-content;
+        border-radius: 12px;
+        border: #9de2ff 3px solid;
+        box-shadow: 5px 5px 23px #bebebe,
+            -5px -5px 23px #ffffff;
+
+    }
+
+    /* .group:hover {
+        animation-play-state: paused;
+    } */
+
+
+    .card-img img {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        object-fit: cover;
+        aspect-ratio: 3/4;
+
+    }
+
+    .star img {
+        width: 20px;
+        height: 20px;
+        filter: brightness(0) invert(1) drop-shadow(0 0 2px #0015ff);
+        margin-top: 10px;
+
+    }
+
+    .card-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 10px;
+    }
+
+    .card-content p {
+        font-size: clamp(10px, 9vw, 11px);
+        font-weight: 400;
+        color: #e0f7ff;
+    }
+
+    .card-content h5 {
+        font-size: clamp(15px, 4vw, 19px);
+        font-weight: 600;
+        color: #71daf7;
+    }
+
+    .card-content h6 {
+        font-size: clamp(12px, 3vw, 15px);
+        color: #e0f7ff;
+    }
+
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
 @media (min-width:768px) and (max-width: 1104px) {
     .HERO-SECTION {
         .Hero-content {
@@ -658,14 +771,31 @@ svg {
             padding: 10px;
         }
 
-        /* .timeline {
+        h2 {
             position: relative;
-            left: 3%;
-        } */
+            left: 8%;
+        }
+    }
+
+    .Testimonial {
+        p {
+            position: relative;
+            left: 10%;
+            max-width: 600px;
+            padding: 10px;
+        }
 
         h2 {
             position: relative;
             left: 8%;
+        }
+
+        .scrolling {
+            width: 80%;
+        }
+
+        .card-content p {
+            left: 0;
         }
     }
 
