@@ -732,7 +732,48 @@ svg {
             box-shadow: #d3e8ff 1px 2px 12px,
           -1px -2px 12px #00112480;
         }
-}
+
+
+    }
+    
+    footer{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: baseline;
+        gap: 3.5rem;
+        padding: 30px;
+        background-color: #287B9C;
+        flex-wrap: wrap;
+        height: 100%;
+
+       .logo img{
+            width: 130px;
+            height: clamp(40px,6.5rem,190px);
+        }
+
+        li{
+            max-width: 300px;
+            list-style: none;
+            color: #ffffff;
+            margin-top: 5px;
+        }
+
+        a{
+            text-decoration: none;
+            color: #f8f8f8;
+        }
+
+        p{
+            max-width: clamp(300px,15vw,500px);
+            color: white;
+        }
+
+        h4{
+            color: #92e0ff;
+            margin-bottom: 10px;
+        }
+    }
+
 
 @keyframes scroll {
     0% {
@@ -766,6 +807,15 @@ svg {
        }
 
     }
+
+         footer {
+             display: flex;
+             justify-content: space-between;
+
+             .logo img{
+                height: 70px;
+             }
+         }
   
 }
 
@@ -835,6 +885,8 @@ svg {
         h6 {
             font-size: 1.2rem;
         }
+
+       
     }
 
     .Testimonial {
@@ -868,6 +920,7 @@ svg {
         }
     }
 
+    
 
 }
 
@@ -959,6 +1012,10 @@ svg {
         .mapouter{
             max-width: 80%;
         }
+    }
+
+    #svg{
+        display: none;
     }
 
 }

@@ -62,7 +62,7 @@ function sendToWhatsapp(){
     let date = document.getElementById("date").value;
     let message = document.getElementById("Message").value;
 
-    let whatsappMessage = `Name: ${name}\nPhone: ${phone}\nDate: ${date}\nMessage: ${message}`;
+    let whatsappMessage = `Hello Greetings Sir \n Name: ${name}\nPhone: ${phone}\nDate: ${date}\nMessage: ${message}`;
 
     let whatsappURL = `https://wa.me/${number}?text=${encodeURIComponent(whatsappMessage)}`;
     window.open(whatsappURL, '_blank');
