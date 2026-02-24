@@ -589,13 +589,14 @@ svg {
 
 
     .cards {
+        flex: 0 0 5em;
         padding: 15px;
         display: flex;
         flex-direction: column;
         align-items: center;
         background-color: #287B9C;
         min-width: 250px;
-        height: fit-content;
+        height: 24rem;
         border-radius: 12px;
         border: #9de2ff 3px solid;
         box-shadow: 5px 5px 23px #bebebe,
@@ -654,7 +655,7 @@ svg {
 
 .contact {
 
-     h2 {
+    h2 {
         font-family: "Telma";
         font-size: clamp(20px, 8vw, 40px);
         color: #ff3700;
@@ -679,7 +680,7 @@ svg {
         gap: 2rem;
         padding-inline: 30px;
         margin-top: 30px;
-      
+
     }
 
     form>div {
@@ -694,20 +695,20 @@ svg {
         border-bottom: #00b7ff solid 2px;
         padding: 10px;
         background-color: transparent;
-          box-shadow: #d3e8ff 1px 2px 12px,
-          -1px -2px 12px #81b9fa;
-          border-radius: 5px;
-          margin-top: 10px;
+        box-shadow: #d3e8ff 1px 2px 12px,
+            -1px -2px 12px #81b9fa;
+        border-radius: 5px;
+        margin-top: 10px;
     }
 
-    input:focus{
+    input:focus {
         border: #00b7ff 2px solid;
     }
 
-    label{
+    label {
         color: #00435e;
         font-weight: 600;
-        
+
     }
 
     textarea {
@@ -715,64 +716,64 @@ svg {
         height: 9rem;
         padding: 10px;
         border: none;
-          border-radius: 12px;
-          box-shadow: #d3e8ff 1px 2px 12px,
-          -1px -2px 12px #81b9fa;
-           margin-top: 10px;
+        border-radius: 12px;
+        box-shadow: #d3e8ff 1px 2px 12px,
+            -1px -2px 12px #81b9fa;
+        margin-top: 10px;
     }
 
     #date {
         width: 530px;
     }
 
-    .mapouter{
-         display: block;
-            margin: 20px auto; 
-            border-radius: 12px;
-            box-shadow: #d3e8ff 1px 2px 12px,
-          -1px -2px 12px #00112480;
-        }
-
-
+    .mapouter {
+        display: block;
+        margin: 20px auto;
+        border-radius: 12px;
+        box-shadow: #d3e8ff 1px 2px 12px,
+            -1px -2px 12px #00112480;
     }
-    
-    footer{
-        display: flex;
-        justify-content: space-evenly;
-        align-items: baseline;
-        gap: 3.5rem;
-        padding: 30px;
-        background-color: #287B9C;
-        flex-wrap: wrap;
-        height: 100%;
 
-       .logo img{
-            width: 130px;
-            height: clamp(40px,6.5rem,190px);
-        }
 
-        li{
-            max-width: 300px;
-            list-style: none;
-            color: #ffffff;
-            margin-top: 5px;
-        }
+}
 
-        a{
-            text-decoration: none;
-            color: #f8f8f8;
-        }
+footer {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: baseline;
+    gap: 3.5rem;
+    padding: 30px;
+    background-color: #287B9C;
+    flex-wrap: wrap;
+    height: 100%;
 
-        p{
-            max-width: clamp(300px,15vw,500px);
-            color: white;
-        }
-
-        h4{
-            color: #92e0ff;
-            margin-bottom: 10px;
-        }
+    .logo img {
+        width: 130px;
+        height: clamp(40px, 6.5rem, 190px);
     }
+
+    li {
+        max-width: 300px;
+        list-style: none;
+        color: #ffffff;
+        margin-top: 5px;
+    }
+
+    a {
+        text-decoration: none;
+        color: #f8f8f8;
+    }
+
+    p {
+        max-width: clamp(300px, 15vw, 500px);
+        color: white;
+    }
+
+    h4 {
+        color: #92e0ff;
+        margin-bottom: 10px;
+    }
+}
 
 
 @keyframes scroll {
@@ -790,8 +791,8 @@ svg {
         max-width: 140px;
     }
 
-    label{
-        font-size: clamp(10px,5vw,14px);
+    label {
+        font-size: clamp(10px, 5vw, 14px);
         font-weight: 600;
     }
 
@@ -801,22 +802,22 @@ svg {
         padding: 10px;
     }
 
-    .contact{
+    .contact {
         #date {
-           min-width: 320px;
-       }
+            min-width: 320px;
+        }
 
     }
 
-         footer {
-             display: flex;
-             justify-content: space-between;
+    footer {
+        display: flex;
+        justify-content: space-between;
 
-             .logo img{
-                height: 70px;
-             }
-         }
-  
+        .logo img {
+            height: 70px;
+        }
+    }
+
 }
 
 @media (min-width:768px) and (max-width: 1104px) {
@@ -886,7 +887,7 @@ svg {
             font-size: 1.2rem;
         }
 
-       
+
     }
 
     .Testimonial {
@@ -905,9 +906,9 @@ svg {
 
     }
 
-    .contact{
+    .contact {
 
-        p:not(.card-content p){
+        p:not(.card-content p) {
             position: relative;
             left: 10%;
             max-width: 600px;
@@ -920,7 +921,7 @@ svg {
         }
     }
 
-    
+
 
 }
 
@@ -972,7 +973,7 @@ svg {
     }
 
     .Testimonial {
-        p:not(.card-content p){
+        p:not(.card-content p) {
             position: relative;
             left: 10%;
             max-width: 600px;
@@ -988,15 +989,15 @@ svg {
             width: 80%;
         }
 
-        
+
     }
 
-    .contact{
-         #date {
-        width: 630px;
-    }
+    .contact {
+        #date {
+            width: 630px;
+        }
 
-     p:not(.card-content p){
+        p:not(.card-content p) {
             position: relative;
             left: 10%;
             max-width: 600px;
@@ -1008,13 +1009,13 @@ svg {
             left: 8%;
         }
 
-        
-        .mapouter{
+
+        .mapouter {
             max-width: 80%;
         }
     }
 
-    #svg{
+    #svg {
         display: none;
     }
 
