@@ -746,7 +746,7 @@ svg {
 
 @media (max-width:768px) {
     input {
-        max-width: 160px;
+        max-width: 140px;
     }
 
     label{
@@ -755,14 +755,14 @@ svg {
     }
 
     textarea {
-        max-width: 350px;
+        max-width: 320px;
         height: 9rem;
         padding: 10px;
     }
 
     .contact{
         #date {
-           min-width: 350px;
+           min-width: 320px;
        }
 
     }
