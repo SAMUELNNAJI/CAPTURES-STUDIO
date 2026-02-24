@@ -652,6 +652,88 @@ svg {
 
 }
 
+.contact {
+
+     h2 {
+        font-family: "Telma";
+        font-size: clamp(20px, 8vw, 40px);
+        color: #ff3700;
+        text-shadow: #250800 2px 2px 0px 20px;
+        padding-left: 30px;
+        padding-top: 20px;
+    }
+
+    p {
+        padding: 10px 30px;
+        font-weight: 550;
+        font-size: clamp(10px, 5vw, 14px);
+    }
+
+
+    form {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 30px;
+        gap: 2rem;
+        padding-inline: 30px;
+        margin-top: 30px;
+      
+    }
+
+    form>div {
+        display: flex;
+        gap: 2rem;
+    }
+
+    input {
+        width: clamp(240px, 30vw, 300px);
+        height: 40px;
+        border: none;
+        border-bottom: #00b7ff solid 2px;
+        padding: 10px;
+        background-color: transparent;
+          box-shadow: #d3e8ff 1px 2px 12px,
+          -1px -2px 12px #81b9fa;
+          border-radius: 5px;
+          margin-top: 10px;
+    }
+
+    input:focus{
+        border: #00b7ff 2px solid;
+    }
+
+    label{
+        color: #00435e;
+        font-weight: 600;
+        
+    }
+
+    textarea {
+        width: clamp(540px, 50vw, 1650px);
+        height: 9rem;
+        padding: 10px;
+        border: none;
+          border-radius: 12px;
+          box-shadow: #d3e8ff 1px 2px 12px,
+          -1px -2px 12px #81b9fa;
+           margin-top: 10px;
+    }
+
+    #date {
+        width: 530px;
+    }
+
+    .mapouter{
+         display: block;
+            margin: 20px auto; 
+            border-radius: 12px;
+            box-shadow: #d3e8ff 1px 2px 12px,
+          -1px -2px 12px #00112480;
+        }
+}
+
 @keyframes scroll {
     0% {
         transform: translateX(0);
@@ -660,6 +742,31 @@ svg {
     100% {
         transform: translateX(-100%);
     }
+}
+
+@media (max-width:768px) {
+    input {
+        max-width: 160px;
+    }
+
+    label{
+        font-size: clamp(10px,5vw,14px);
+        font-weight: 600;
+    }
+
+    textarea {
+        max-width: 350px;
+        height: 9rem;
+        padding: 10px;
+    }
+
+    .contact{
+        #date {
+           min-width: 350px;
+       }
+
+    }
+  
 }
 
 @media (min-width:768px) and (max-width: 1104px) {
@@ -695,6 +802,7 @@ svg {
 
     .Services {
         width: 100%;
+        position: relative;
 
         p {
             position: relative;
@@ -704,7 +812,7 @@ svg {
         }
 
         .timeline {
-            position: absolute;
+            position: relative;
             left: 10%;
             transform: translateX(-50%, -50%);
         }
@@ -728,6 +836,39 @@ svg {
             font-size: 1.2rem;
         }
     }
+
+    .Testimonial {
+
+        h2 {
+            position: relative;
+            left: 8%;
+        }
+
+        p:not(.cards p) {
+            position: relative;
+            left: 10%;
+            max-width: 600px;
+            padding: 10px;
+        }
+
+    }
+
+    .contact{
+
+        p:not(.card-content p){
+            position: relative;
+            left: 10%;
+            max-width: 600px;
+            padding: 10px;
+        }
+
+        h2 {
+            position: relative;
+            left: 8%;
+        }
+    }
+
+
 }
 
 
@@ -778,7 +919,7 @@ svg {
     }
 
     .Testimonial {
-        p {
+        p:not(.card-content p){
             position: relative;
             left: 10%;
             max-width: 600px;
@@ -794,9 +935,27 @@ svg {
             width: 80%;
         }
 
-        .card-content p {
-            left: 0;
+        
+    }
+
+    .contact{
+         #date {
+        width: 630px;
+    }
+
+     p:not(.card-content p){
+            position: relative;
+            left: 10%;
+            max-width: 600px;
+            padding: 10px;
         }
+
+        h2 {
+            position: relative;
+            left: 8%;
+        }
+
+        
     }
 
 }
