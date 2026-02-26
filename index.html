@@ -691,25 +691,38 @@
             <div class="sk-cube4 sk-cube"></div>
             <div class="sk-cube3 sk-cube"></div>
         </div>
+
+        <div class="logo-loader">
+            <img src="./assets/images/IMG_20260222_200407.webp" alt="">
+        </div>
     </div>
 
-    <script src="./js/menu.js"></script>
-
+    <!-- load jQuery first so plugins/scripts can use it -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="./js/menu.js"></script>
+    <!-- simple vanilla preloader hide; doesn't depend on jQuery -->
     <script>
-        $(window).on("load", function () {
-            $(".loading-wrapper").delay(2000).fadeOut("slow", function () {
-                // Notify other scripts that the preloader is hidden
-                try {
-                    window.dispatchEvent(new Event('preloaderHidden'));
-                } catch (e) {
-                    // IE fallback
-                    var evt = document.createEvent('Event');
-                    evt.initEvent('preloaderHidden', true, true);
-                    window.dispatchEvent(evt);
-                }
-            });
-        })
+        window.addEventListener('load', function () {
+            var loader = document.querySelector('.loading-wrapper');
+            if (loader) {
+                setTimeout(function () {
+                    loader.style.transition = 'opacity .6s';
+                    loader.style.opacity = '0';
+                    loader.addEventListener('transitionend', function () {
+                        loader.remove();
+                        // fire custom event for other scripts
+                        var evt;
+                        try {
+                            evt = new Event('preloaderHidden');
+                        } catch (e) {
+                            evt = document.createEvent('Event');
+                            evt.initEvent('preloaderHidden', true, true);
+                        }
+                        window.dispatchEvent(evt);
+                    });
+                }, 2000);
+            }
+        });
     </script>
 
 </body>
