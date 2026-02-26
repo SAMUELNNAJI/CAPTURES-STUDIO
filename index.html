@@ -651,6 +651,9 @@
         </path>
     </svg>
 
+
+
+
     <footer>
         <div class="company">
             <div class="logo">
@@ -680,7 +683,24 @@
             </ul>
         </div>
     </footer>
+
+    <div class="loading-wrapper">
+        <div class="sk-folding-cube">
+            <div class="sk-cube1 sk-cube"></div>
+            <div class="sk-cube2 sk-cube"></div>
+            <div class="sk-cube4 sk-cube"></div>
+            <div class="sk-cube3 sk-cube"></div>
+        </div>
+    </div>
+
     <script src="./js/menu.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(window).on("load", function () {
+            $(".loading-wrapper").delay(2000).fadeOut("slow");
+        })
+    </script>
 
 </body>
 
