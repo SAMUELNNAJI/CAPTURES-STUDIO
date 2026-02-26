@@ -1070,8 +1070,8 @@ footer {
 
 
 .slide-left {
-    animation: slide-left 1.4s linear;
-    animation-delay: 2.8s;
+    animation: slide-left 1.4s linear forwards;
+
 }
 
 @keyframes slide-left {
@@ -1086,7 +1086,7 @@ footer {
 
 .slide-right {
     animation: slide-right 1.4s linear;
-    animation-delay: 2.8s;
+
 }
 
 @keyframes slide-right {

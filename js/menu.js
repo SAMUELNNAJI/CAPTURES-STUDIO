@@ -55,7 +55,7 @@ if (tabButtons.length > 0) {
 
 
 // WHATSAPP CONTACT FORM FUNCTIONALITY
-function sendToWhatsapp(){
+function sendToWhatsapp() {
     let number = "+2348157273063"; // Replace with your WhatsApp number
     let name = document.getElementById("Name").value;
     let phone = document.getElementById("Number").value;
@@ -67,3 +67,24 @@ function sendToWhatsapp(){
     let whatsappURL = `https://wa.me/${number}?text=${encodeURIComponent(whatsappMessage)}`;
     window.open(whatsappURL, '_blank');
 }
+
+// Apply directional slide animations to elements marked with `data-animate`
+function applyDirectionalAnimations() {
+    const nodes = document.querySelectorAll('[data-animate]');
+    nodes.forEach((el) => {
+        const dir = el.getAttribute('data-animate');
+        if (dir === 'left') {
+            el.classList.add('slide-left');
+        } else if (dir === 'right') {
+            el.classList.add('slide-right');
+        }
+    });
+}
+
+// Try to run after a custom event fired when preloader is hidden
+window.addEventListener('preloaderHidden', applyDirectionalAnimations);
+
+// Fallback: if no preloader event, run shortly after window load
+window.addEventListener('load', function () {
+    setTimeout(applyDirectionalAnimations, 3000);
+});
