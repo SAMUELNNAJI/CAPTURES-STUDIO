@@ -698,23 +698,36 @@
     </div>
 
     <script src="./js/menu.js"></script>
+    <script>
+        (function () {
+            function hidePreloader() {
+                const wrapper = document.querySelector('.loading-wrapper');
+                if (!wrapper) return;
+                wrapper.style.transition = 'opacity 600ms ease';
+                wrapper.style.opacity = '0';
+                setTimeout(() => {
+                    wrapper.style.display = 'none';
+                    try {
+                        window.dispatchEvent(new Event('preloaderHidden'));
+                    } catch (e) {
+                        var evt = document.createEvent('Event');
+                        evt.initEvent('preloaderHidden', true, true);
+                        window.dispatchEvent(evt);
+                    }
+                }, 800);
+            }
+
+            if (document.readyState === 'complete') {
+                setTimeout(hidePreloader, 2000);
+            } else {
+                window.addEventListener('load', function () {
+                    setTimeout(hidePreloader, 2000);
+                });
+            }
+        })();
+    </script>
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script>
-        $(window).on("load", function () {
-            $(".loading-wrapper").delay(2000).fadeOut("slow", function () {
-                // Notify other scripts that the preloader is hidden
-                try {
-                    window.dispatchEvent(new Event('preloaderHidden'));
-                } catch (e) {
-                    // IE fallback
-                    var evt = document.createEvent('Event');
-                    evt.initEvent('preloaderHidden', true, true);
-                    window.dispatchEvent(evt);
-                }
-            });
-        })
-    </script>
 
 </body>
 
