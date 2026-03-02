@@ -121,7 +121,7 @@ header {
 }
 
 .hamburger.active .line1 {
-    transform: rotate(-45deg) translate(-10px, 12px);
+    transform: rotate(-45deg) translate(-10px, 7px);
 }
 
 .hamburger.active .line2 {
@@ -160,7 +160,7 @@ header {
     .nav-menu {
         position: fixed;
         left: -100%;
-        top: 120px;
+        top: 100px;
         flex-direction: column;
         background: linear-gradient(135deg, #287b9c 0%, #1a5470 100%);
         width: 100%;

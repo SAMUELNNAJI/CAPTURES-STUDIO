@@ -718,10 +718,10 @@
             }
 
             if (document.readyState === 'complete') {
-                setTimeout(hidePreloader, 2000);
+                setTimeout(hidePreloader);
             } else {
                 window.addEventListener('load', function () {
-                    setTimeout(hidePreloader, 2000);
+                    setTimeout(hidePreloader);
                 });
             }
         })();
