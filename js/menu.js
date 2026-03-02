@@ -86,5 +86,5 @@ window.addEventListener('preloaderHidden', applyDirectionalAnimations);
 
 // Fallback: if no preloader event, run shortly after window load
 window.addEventListener('load', function () {
-    setTimeout(applyDirectionalAnimations, 3000);
+    setTimeout(applyDirectionalAnimations, 1000);
 });
